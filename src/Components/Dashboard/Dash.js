@@ -1,6 +1,7 @@
 import React from 'react'
 import Graph from '../Graph/Graph'
 import Table from '../Table/Table'
+import User from '../User/User'
 import './dash.css'
 function Dash() {
     return (
@@ -45,7 +46,7 @@ function Dash() {
         </div>
         <Table/>
         <Graph/>
-        
+        <User/>
       </div>
    
     </div>
