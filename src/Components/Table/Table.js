@@ -4,51 +4,187 @@ import '../Table/table.css'
 function Table() {
     return (
         <div className="table_container">
-            <h1>Colleges are <span>200</span>of <span>1000</span></h1>
-
-<table class="responstable">
+           <div class="wrapper">
   
-  <tr>
-    <th>Sno</th>
-    <th data-th="Driver details"><span>College Name</span></th>
-    <th>Courses</th>
-    <th>Founding year</th>
-    <th>Students</th>
-  </tr>
-  
-  <tr>
-    <td><input type="radio"/></td>
-    <td>Steve</td>
-    <td>Foo</td>
-    <td>01/01/1978</td>
-    <td>Policyholder</td>
-  </tr>
-  
-  <tr>
-    <td><input type="radio"/></td>
-    <td>Steffie</td>
-    <td>Foo</td>
-    <td>01/01/1978</td>
-    <td>Spouse</td>
-  </tr>
-  
-  <tr>
-    <td><input type="radio"/></td>
-    <td>Stan</td>
-    <td>Foo</td>
-    <td>01/01/1994</td>
-    <td>Son</td>
-  </tr>
-  
-  <tr>
-    <td><input type="radio"/></td>
-    <td>Stella</td>
-    <td>Foo</td>
-    <td>01/01/1992</td>
-    <td>Daughter</td>
-  </tr>
-  
-</table>
+  <div class="table">
+    
+    <div class="row header">
+      <div class="cell">
+        Name
+      </div>
+      <div class="cell">
+        Age
+      </div>
+      <div class="cell">
+        Occupation
+      </div>
+      <div class="cell">
+        Location
+      </div>
+      <div class="cell">
+        Location
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Joseph Smith
+      </div>
+      <div class="cell" data-title="Age">
+        27
+      </div>
+      <div class="cell" data-title="Occupation">
+        Project Manager
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Maxwell Johnson
+      </div>
+      <div class="cell" data-title="Age">
+        26
+      </div>
+      <div class="cell" data-title="Occupation">
+        UX Architect & Designer
+      </div>
+      <div class="cell" data-title="Location">
+        Arlington, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Harry Harrison
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Front-End Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Boston, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+    </div>
+    
+  </div>
+   
+</div>
         </div>
     )
 }
