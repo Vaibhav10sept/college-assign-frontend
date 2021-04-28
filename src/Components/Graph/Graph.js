@@ -38,6 +38,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           fill="#8884d8"
           paddingAngle={5}
           dataKey="value"
+          className="dispnone"
         >
           {data01.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
