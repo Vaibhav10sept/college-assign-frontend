@@ -23,7 +23,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           dataKey="value"
           isAnimationActive={true}
           data={data01}
-          cx={280}
+          cx={140}
           cy={200}
           outerRadius={100}
           fill="#5443c3"
