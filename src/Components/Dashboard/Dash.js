@@ -1,5 +1,7 @@
 import React from 'react'
+import Courses from '../Courses/Courses'
 import Graph from '../Graph/Graph'
+import Institute from '../Institue/Institute'
 import Table from '../Table/Table'
 import User from '../User/User'
 import './dash.css'
@@ -47,6 +49,8 @@ function Dash() {
         <Table/>
         <Graph/>
         <User/>
+        <Institute/>
+        <Courses/>
       </div>
    
     </div>
