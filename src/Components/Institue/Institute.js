@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Institue/institute.css'
 import { useParams } from "react-router-dom";
+import Tabs from '../Tabs/Tabs';
 function Institute() {
     const { id } = useParams();
     return (
@@ -54,6 +55,7 @@ function Institute() {
                         </div>
                     </div>
                 </div>
+                <Tabs/>
             </section>
         </div>
     )
