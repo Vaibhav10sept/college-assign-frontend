@@ -3,6 +3,8 @@ import '../College/college.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import CubeGrid from "styled-loaders-react/lib/components/CubeGrid";
+
 function College({state,collegeId}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
@@ -80,7 +82,7 @@ function College({state,collegeId}) {
                   {item.courses.map(cour=>(cour+", "))}
                 </div>
                 </div>
-            )):<h2>loading...</h2>}
+            )):<CubeGrid size="90px" color="#5443C3" />}
 
 
               </div>

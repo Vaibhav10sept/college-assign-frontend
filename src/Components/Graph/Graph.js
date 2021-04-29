@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import '../Graph/graph.css'
-import { PieChart, Pie, Legend, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Sector, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie,  Tooltip } from "recharts";
 import axios from "axios";
+import CubeGrid from "styled-loaders-react/lib/components/CubeGrid";
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 export default function Graph() {
@@ -37,7 +38,7 @@ export default function Graph() {
     <div class="pie_chart">
       {fetcheddata ? (
         <div className="chartinn">
-          <h2>state wise</h2>
+          <h2>state wise division of colleges</h2>
           <PieChart width={400} height={400} >
             <Pie
               dataKey="value"
@@ -54,11 +55,11 @@ export default function Graph() {
 
           </PieChart>
 
-        </div>) : null}
+        </div>) : <CubeGrid size="90px" color="#5443C3" />}
 
       {fetcheddata ? (
         <div className="chartinn">
-          <h2>course wise</h2>
+          <h2>course wise division of colleges</h2>
           <PieChart width={400} height={400} >
             <Pie
               dataKey="value"
@@ -75,7 +76,7 @@ export default function Graph() {
 
           </PieChart>
 
-        </div>) : null}
+        </div>) : <CubeGrid size="90px" color="#5443C3" />}
 
 
 

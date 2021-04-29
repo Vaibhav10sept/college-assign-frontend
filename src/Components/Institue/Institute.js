@@ -64,7 +64,7 @@ function Institute() {
                                 <div class="col-md-6">
                                     <h4>
                                         <i class="far fa-star"></i>
-                                    No of Students : 100 </h4>
+                                    No of Student : 100 </h4>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
