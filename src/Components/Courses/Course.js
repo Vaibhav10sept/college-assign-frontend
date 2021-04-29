@@ -9,6 +9,7 @@ function Course({course}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
   useEffect(() => {
+    window.scrollTo(0, 0);
   axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/course/${course}`)
       .then((res) => {
