@@ -9,7 +9,7 @@ function College({state,collegeId}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
   React.useEffect(() => {
-
+    window.scrollTo(0, 0);
   if(state){
     axios
     .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)

@@ -10,9 +10,12 @@
     align-items:center;
     flex-wrap: wrap;
 }
+.charthead {
+    /* margin-right: 100px; */
+    text-align: center;
+}
 .chartinn {
     text-align: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 @media screen and (max-width: 580px) {
     .pie_chart{
@@ -27,7 +30,6 @@
     margin-top: 30px;
     width: 100%;
     border-radius: 16px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .dispnone{
 display: flex;
