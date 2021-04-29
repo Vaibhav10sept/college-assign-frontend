@@ -1,7 +1,4 @@
 
-
-
-
 import React, { useEffect, useState } from "react";
 import '../College/college.css'
 import Fade from 'react-reveal/Fade';
