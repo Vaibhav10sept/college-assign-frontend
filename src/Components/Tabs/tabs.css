@@ -54,7 +54,7 @@
   }
   
   .tabs label {
-    background: #4477CC;
+    background: #5443c3;
     color: #fefefe;
     font-size: 15px;
     line-height: 50px;
@@ -90,7 +90,7 @@
   }
   
   .tabs input:hover + label {
-    background: #FF6600;
+    background: #1e6be6;
     /*e08f24*/
   }
   
