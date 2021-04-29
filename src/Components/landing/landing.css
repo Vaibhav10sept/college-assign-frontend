@@ -254,7 +254,6 @@ blockquote cite {
   font-size: 1rem;
   display: block;
   margin: 0.5rem 0 0 1.2rem;
-  text-style: italic;
 }
 @media (max-width: 43.75em) {
   blockquote cite {

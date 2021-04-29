@@ -48,12 +48,13 @@
   .tabs label {
     background: #5443c3;
     color: #fefefe;
-    font-size: 15px;
-    line-height: 50px;
-    height: 60px;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 30px;
+    height: auto;
     position: relative;
     top: 0;
-    padding: 0 20px;
+    
     float: left;
     display: block;
     width: 50%;
@@ -161,4 +162,12 @@
     text-align: left;
     margin: 0;
     color: #777;
+  }
+  
+  @media screen and (max-width: 580px) {
+    .tabs label{
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px 0;
+    }
   }
