@@ -2,14 +2,19 @@ import React, { useEffect, useState } from "react";
 import '../Courses/courses.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import CubeGrid from "styled-loaders-react/lib/components/CubeGrid";
 
 function Course({course}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
+  const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
   axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/course/${course}`)
       .then((res) => {

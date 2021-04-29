@@ -38,7 +38,7 @@ export default function Graph() {
     <div class="pie_chart">
       {fetcheddata ? (
         <div className="chartinn">
-          <h2 className="headbar">state wise division of colleges</h2>
+          <h2 className="headbar charthead">state wise division of colleges</h2>
           <PieChart width={400} height={400} >
             <Pie
               dataKey="value"
