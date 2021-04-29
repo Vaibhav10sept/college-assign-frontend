@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import '../Graph/graph.css'
-import { PieChart, Pie, Legend,BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Sector, Cell, ResponsiveContainer } from "recharts";
-
+import { PieChart, Pie, Legend, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Sector, Cell, ResponsiveContainer } from "recharts";
+import axios from "axios";
 
 const data = [
   {
@@ -67,62 +67,82 @@ const data02 = [
 ];
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 export default function Graph() {
-  return (
-    <div >
-      <div class="pie_chart">
-      <PieChart width={900} height={300} >
-        <Pie
-          dataKey="value"
-          isAnimationActive={true}
-          data={data01}
-          cx={150}
-          cy={160}
-          outerRadius={100}
-          fill="#5443c3"
-          label
-          className="pie1"
-        />
-        <Pie
-          data={data02}
-          cx={640}
-          cy={160}
-          innerRadius={60}
-          outerRadius={100}
-          fill="#8884d8"
-          paddingAngle={5}
-          dataKey="value"
-          className="dispnone"
-        >
-          {data02.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
+  const [fetcheddata, setfetcheddata] = useState();
+  const [fetcheddata2, setfetcheddata2] = useState();
 
-        <Tooltip />
-      </PieChart>
-      </div>
-      <div className="barchart">
-      <BarChart
-        width={600}
-        height={350}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 100,
-          bottom: 5
-        }}
-      ><Tooltip >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        </Tooltip>
-        <Legend />
-        <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
-        <Bar dataKey="uv" fill="#5443c3" />
-      </BarChart>
-      </div>
+
+  React.useEffect(() => {
+
+    axios
+      .get(`https://college-backend-assignment.herokuapp.com/api/college/countStates`)
+      .then((res) => {
+        setfetcheddata(res.data);
+        console.log("data", fetcheddata);
+      })
+      .catch((err) => {
+        console.log("blog error", err);
+      });
+
+
+    axios
+      .get(`https://college-backend-assignment.herokuapp.com/api/college/countCourses`)
+      .then((res) => {
+        setfetcheddata2(res.data);
+        console.log("data", fetcheddata2);
+      })
+      .catch((err) => {
+        console.log("blog error", err);
+      });
+  }, []);
+  return (
+
+    <div class="pie_chart">
+      {fetcheddata ? (
+        <div className="chartinn">
+          <h2>state wise</h2>
+          <PieChart width={400} height={400} >
+            <Pie
+              dataKey="value"
+              isAnimationActive={true}
+              data={fetcheddata}
+              cx={150}
+              cy={160}
+              outerRadius={100}
+              fill="#5443c3"
+              label
+              className="pie1"
+            />
+            <Tooltip />
+
+          </PieChart>
+
+        </div>) : null}
+
+      {fetcheddata ? (
+        <div className="chartinn">
+          <h2>course wise</h2>
+          <PieChart width={400} height={400} >
+            <Pie
+              dataKey="value"
+              isAnimationActive={true}
+              data={fetcheddata2}
+              cx={150}
+              cy={160}
+              outerRadius={100}
+              fill="#5443c3"
+              label
+              className="pie1"
+            />
+            <Tooltip />
+
+          </PieChart>
+
+        </div>) : null}
+
+
+
     </div>
+    
   );
 
 }
