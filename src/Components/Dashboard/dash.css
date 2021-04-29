@@ -34,6 +34,7 @@ button
 { visibility:hidden;
   opacity:0;
   position:absolute;
+  
   z-index:-8888;
 }
 #mobilmenu:checked + .sidebar
