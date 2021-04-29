@@ -20,7 +20,7 @@ align-items: baseline;
   }
   @media only screen and (max-width: 600px) {
     .preloader {
-      color: yellowgreen;
+      color: rgb(255, 255, 255);
      font-size: 25px;
     }
     .preloader img {
@@ -53,8 +53,6 @@ align-items: baseline;
     height: 250px;
     margin: auto;
     margin-top: 10%;
-    
-
     position: relative;
 }
 
