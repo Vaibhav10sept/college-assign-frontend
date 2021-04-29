@@ -7,8 +7,8 @@ function CollegeDash() {
 
         state.map(item => (
             <>
-                <h1 className="headbar">Colleges in Jharkhand</h1>
-                <College state="jharkhand" />
+                <h1 className="headbar">Colleges in {item}</h1>
+                <College state={item} />
             </>
         ))
 
