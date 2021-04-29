@@ -6,7 +6,7 @@ function Landing() {
         <div className="landing_cont">
         <header class="bg-image">
   <div class="container">
-    <h1>Welcome, This is the assignment made by VAIBHAV TIWARI.</h1>
+    <h1>Welcome, This assignment is made by VAIBHAV TIWARI.</h1>
     <h2>The batabase is created on mongoDB and frontend is made of ReactJS. The data that I have generate is random and fake It contains 100 colleges and 10,000 students(100 students for each college).
             Please click on the sibebar options to see the actual functioning of the assignment.</h2>
     {/* <a href="#" class="btn btn-transparent">Order yours now!</a> */}
