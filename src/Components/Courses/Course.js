@@ -1,7 +1,7 @@
 import React from 'react'
-import '../Student/student.css'
+import './student.css'
 import Fade from 'react-reveal/Fade';
-function Student() {
+function Course() {
     return (
         <div className="Student_container">
            <div class="Student_wrapper">
@@ -206,4 +206,4 @@ function Student() {
     )
 }
 
-export default Student
+export default Course

@@ -6,8 +6,7 @@ import Table from '../Table/Table'
 import User from '../User/User'
 import Slide from 'react-reveal/Slide';
 import './dash.css'
-import College from '../College/College'
-import Student from '../Student/Student'
+import StudentDash from '../Courses/CourseDash'
 
 import {
   BrowserRouter,
@@ -18,6 +17,7 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
+import CollegeDash from '../College/CollegeDash'
 
 function Dash() {
   return (
@@ -70,10 +70,12 @@ function Dash() {
             </div>
           </div>
           <Switch>
-            <Route exact path="/state" component={College} />
-            <Route exact path="/course" component={Student} />
+            <Route exact path="/state" component={CollegeDash} />
+            <Route exact path="/course" component={StudentDash} />
             <Route exact path="/chart" component={Graph} />
+            <Route exact path="/college/:id" component={Institute} />
 
+           
           </Switch>
           {/* <College />
         <Graph />

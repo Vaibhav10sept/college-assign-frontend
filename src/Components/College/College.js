@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import '../College/college.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
-function College() {
-  const [isLoading, setIsLoading] = useState(false);
+import { useHistory } from "react-router-dom";
+function College({state}) {
   const [fetcheddata, setfetcheddata] = useState();
-
+  const history = useHistory();
   React.useEffect(() => {
-    const state = "jharkhand"
-    setIsLoading(true);
+
+  
     axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
       .then((res) => {
@@ -18,8 +18,7 @@ function College() {
       .catch((err) => {
         console.log("blog error", err);
       });
-    // console.log("response is: "+response);
-    setIsLoading(false);
+ 
   }, []);
   return (
     <div className="College_container">
@@ -52,7 +51,7 @@ function College() {
       </div>
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
-              <div class="College_row">
+              <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
                 <div class="College_cell" data-title="Name">
                   {item._id}
                 </div>

@@ -1,9 +1,11 @@
 import React from 'react'
 import '../Institue/institute.css'
+import { useParams } from "react-router-dom";
 function Institute() {
+    const { id } = useParams();
     return (
         <div>
-           < section class="about" id="about">
+           <section class="about" id="about">
             <div class="container">
                 <div class="heading text-center">
                     <h2>College
