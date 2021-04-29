@@ -11,12 +11,7 @@
   outline:0;
   list-style:none;
 }
-html,body
-{
-  width:100%;
-  height:100%;
- 
-}
+
 .dashbody
 {
   
@@ -42,7 +37,7 @@ button
   z-index:-8888;
 }
 #mobilmenu:checked + .sidebar
-{transform:translate(280px); z-index:999;}
+{transform:translate(280px); z-index:2;}
 #mobilmenu:checked + .sidebar + #mmenu
 {transform:translate(50px);color:#fff;}
 
@@ -316,7 +311,8 @@ bottom:50%;
   }
   .icerik .ust .ara input {
     background: #ddd9f2;
-    padding: 10px 45px;
+    margin-left: 26px;
+    padding: 10px 35px;
   }
   .icerik .ust .ara i {
     top: 16%;
