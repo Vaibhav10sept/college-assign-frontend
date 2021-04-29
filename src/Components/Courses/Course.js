@@ -26,7 +26,7 @@ function Course({course}) {
         <Fade left cascade>
           <div class="Courses_table">
 
-            <div class="Courses_row Courses_header">
+            <div class="Courses_row Courses_header" style={{cursor:"default!important"}}>
               <div class="Courses_cell">
                 ID
       </div>
