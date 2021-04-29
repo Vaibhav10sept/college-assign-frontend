@@ -16,9 +16,11 @@ function Institute() {
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="about" class="img-fluid" width="100%"/>
+                        <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="about" class="img-fluid" />
                     </div>
-                    <div class="col-lg-6">
+                    
+                            <div class="col-md-6">
+                            <div class="col-lg-6">
                         <h3>Lorem ipsum dolor sit amet, consectetur </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -29,7 +31,6 @@ function Institute() {
                                 <h4>
                                     <i class="far fa-star"></i>Awesome Design</h4>
                             </div>
-                            <div class="col-md-6">
                                 <h4>
                                     <i class="far fa-star"></i>
                                     Creative Design</h4>

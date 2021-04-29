@@ -1,7 +1,14 @@
 .about {
     padding: 10px 0;
 }
-
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col-lg-6{
+    display: flex;
+    flex-direction: column;
+}
 .about .heading h2 {
     font-size: 30px;
     font-weight: 700;
@@ -9,6 +16,9 @@
     padding: 0;
     text-align: center;
 
+}
+.img-fluid{
+    width: auto;
 }
 .col-lg-6 h4{
     text-align: center;
