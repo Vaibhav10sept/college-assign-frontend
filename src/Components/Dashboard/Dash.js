@@ -4,6 +4,7 @@ import Graph from '../Graph/Graph'
 import Institute from '../Institue/Institute'
 import Table from '../Table/Table'
 import User from '../User/User'
+import Slide from 'react-reveal/Slide';
 import './dash.css'
 function Dash() {
     return (
@@ -13,6 +14,7 @@ function Dash() {
       <div class="sidebar">
         <div class="logo"><i class="fa fa-shopping-bag"></i><h2>Welcome User</h2></div>
         <div class="menu">
+        <Slide top cascade>
           <ul>
             <li> <i class="fa fa-home"></i>Student1</li>
             <li> <i class="fa fa-home"></i>Student1</li>
@@ -23,6 +25,7 @@ function Dash() {
             <li> <i class="fa fa-home"></i>Student1</li>
 
           </ul>
+          </Slide>
         </div>
       </div>
       <label id="mmenu" for="mobilmenu">

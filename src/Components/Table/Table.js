@@ -1,13 +1,13 @@
 import React from 'react'
 import '../Table/table.css'
-
+import Fade from 'react-reveal/Fade';
 function Table() {
     return (
         <div className="table_container">
            <div class="wrapper">
-  
+           <Fade left cascade>
   <div class="table">
-    
+ 
     <div class="row header">
       <div class="cell">
         Name
@@ -24,22 +24,11 @@ function Table() {
       <div class="cell">
         Location
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+      <div class="cell">
+        Location
       </div>
-      <div class="cell" data-title="Age">
-        25
-      </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="cell">
+        Location
       </div>
     </div>
     <div class="row">
@@ -58,39 +47,11 @@ function Table() {
       <div class="cell" data-title="Location">
         Brookline, MA
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
-      </div>
-      <div class="cell" data-title="Age">
-        25
-      </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
-      </div>
       <div class="cell" data-title="Location">
         Brookline, MA
       </div>
       <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
-      </div>
-      <div class="cell" data-title="Age">
-        25
-      </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+        Brookline
       </div>
     </div>
     <div class="row">
@@ -109,6 +70,12 @@ function Table() {
       <div class="cell" data-title="Location">
         Brookline, MA
       </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
     </div>
     <div class="row">
       <div class="cell" data-title="Name">
@@ -125,6 +92,81 @@ function Table() {
       </div>
       <div class="cell" data-title="Location">
         Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell" data-title="Name">
+        Luke Peters
+      </div>
+      <div class="cell" data-title="Age">
+        25
+      </div>
+      <div class="cell" data-title="Occupation">
+        Freelance Web Developer
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
       </div>
     </div>
     
@@ -144,6 +186,12 @@ function Table() {
       <div class="cell" data-title="Location">
         Brookline, MA
       </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
     </div>
     
     <div class="row">
@@ -161,6 +209,12 @@ function Table() {
       </div>
       <div class="cell" data-title="Location">
         Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
       </div>
     </div>
     
@@ -180,10 +234,16 @@ function Table() {
       <div class="cell" data-title="Location">
         Brookline, MA
       </div>
+      <div class="cell" data-title="Location">
+        Brookline, MA
+      </div>
+      <div class="cell" data-title="Location">
+        Brookline
+      </div>
     </div>
     
   </div>
-   
+  </Fade>
 </div>
         </div>
     )
