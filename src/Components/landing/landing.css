@@ -3,7 +3,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 
 .landing_cont{
-    margin-top: 20px;
+    margin-top: 30px;
+    min-height: 85vh;
 }
 .landing_cont a {
   text-decoration: none;
