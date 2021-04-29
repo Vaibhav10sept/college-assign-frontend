@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Student/student.css'
 import Fade from 'react-reveal/Fade';
 function Student() {
     return (
@@ -9,236 +10,193 @@ function Student() {
  
     <div class="Student_row Student_header">
       <div class="Student_cell">
-        Name
+        ID
       </div>
       <div class="Student_cell">
-        Age
+        NAME
       </div>
       <div class="Student_cell">
-        Occupation
+        BATCH_YEAR
       </div>
       <div class="Student_cell">
-        Location
+        College_ID
       </div>
       <div class="Student_cell">
-        Location
+        SKILLS
       </div>
-      <div class="Student_cell">
-        Location
-      </div>
-      <div class="Student_cell">
-        Location
-      </div>
+
     </div>
     <div class="Student_row">
       <div class="Student_cell" data-title="Name">
-        Luke Peters
+        18BCS2247
       </div>
       <div class="Student_cell" data-title="Age">
-        25
+        Sanskar
       </div>
       <div class="Student_cell" data-title="Occupation">
-        Freelance Web Developer
+        2022
       </div>
       <div class="Student_cell" data-title="Location">
-        Brookline, MA
+        11811679
       </div>
       <div class="Student_cell" data-title="Location">
-        Brookline, MA
+        JAVA,REACT,UX&UI
+      </div>
+
+    </div>
+    <div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
+      </div>
+      <div class="Student_cell" data-title="Age">
+        Sanskar
+      </div>
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
       <div class="Student_cell" data-title="Location">
-        Brookline, MA
+        11811679
       </div>
       <div class="Student_cell" data-title="Location">
-        Brookline
+        JAVA,REACT,UX&UI
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Age">
-        25
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Location">
-        Brookline
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Age">
-        25
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Location">
-        Brookline
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Age">
-        25
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Location">
-        Brookline
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Age">
-        25
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Location">
-        Brookline
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-    </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Luke Peters
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Age">
-        25
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Occupation">
-        Freelance Web Developer
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Location">
-        Brookline
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Joseph Smith
+
+    </div><div class="Student_row">
+      <div class="Student_cell" data-title="Name">
+        18BCS2247
       </div>
-      <div class="cell" data-title="Age">
-        27
+      <div class="Student_cell" data-title="Age">
+        Sanskar
       </div>
-      <div class="cell" data-title="Occupation">
-        Project Manager
+      <div class="Student_cell" data-title="Occupation">
+        2022
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        11811679
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
+      <div class="Student_cell" data-title="Location">
+        JAVA,REACT,UX&UI
       </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Maxwell Johnson
-      </div>
-      <div class="cell" data-title="Age">
-        26
-      </div>
-      <div class="cell" data-title="Occupation">
-        UX Architect & Designer
-      </div>
-      <div class="cell" data-title="Location">
-        Arlington, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="cell" data-title="Name">
-        Harry Harrison
-      </div>
-      <div class="cell" data-title="Age">
-        25
-      </div>
-      <div class="cell" data-title="Occupation">
-        Front-End Developer
-      </div>
-      <div class="cell" data-title="Location">
-        Boston, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline, MA
-      </div>
-      <div class="cell" data-title="Location">
-        Brookline
-      </div>
+
     </div>
     
   </div>
