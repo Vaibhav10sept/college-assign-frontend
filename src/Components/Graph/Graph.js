@@ -68,22 +68,24 @@ const data02 = [
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 export default function Graph() {
   return (
-    <div class="pie_chart">
-      <PieChart width={900} height={350} >
+    <div >
+      <div class="pie_chart">
+      <PieChart width={900} height={300} >
         <Pie
           dataKey="value"
           isAnimationActive={true}
           data={data01}
-          cx={140}
-          cy={200}
+          cx={150}
+          cy={160}
           outerRadius={100}
           fill="#5443c3"
           label
+          className="pie1"
         />
         <Pie
           data={data02}
           cx={640}
-          cy={200}
+          cy={160}
           innerRadius={60}
           outerRadius={100}
           fill="#8884d8"
@@ -98,14 +100,16 @@ export default function Graph() {
 
         <Tooltip />
       </PieChart>
+      </div>
+      <div className="barchart">
       <BarChart
-        width={500}
-        height={300}
+        width={600}
+        height={350}
         data={data}
         margin={{
           top: 5,
           right: 30,
-          left: 20,
+          left: 100,
           bottom: 5
         }}
       ><Tooltip >
@@ -115,8 +119,9 @@ export default function Graph() {
         </Tooltip>
         <Legend />
         <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
-        <Bar dataKey="uv" fill="#82ca9d" />
+        <Bar dataKey="uv" fill="#5443c3" />
       </BarChart>
+      </div>
     </div>
   );
 
