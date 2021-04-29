@@ -3,21 +3,34 @@ import '../College/college.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-function College({state}) {
+function College({state,collegeId}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
   React.useEffect(() => {
 
-  
+  if(state){
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
-      .then((res) => {
-        setfetcheddata(res.data);
-        console.log("data", fetcheddata);
-      })
-      .catch((err) => {
-        console.log("blog error", err);
-      });
+    .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
+    .then((res) => {
+      setfetcheddata(res.data);
+      console.log("data", fetcheddata);
+    })
+    .catch((err) => {
+      console.log("blog error", err);
+    });
+  }
+  if(collegeId) {
+    axios
+    .get(`https://college-backend-assignment.herokuapp.com/api/college/similarCollege/${collegeId}`)
+    .then((res) => {
+      setfetcheddata(res.data);
+      console.log("data", fetcheddata);
+    })
+    .catch((err) => {
+      console.log("blog error", err);
+    });
+  }
+ 
  
   }, []);
   return (

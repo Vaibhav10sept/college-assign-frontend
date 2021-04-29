@@ -10,11 +10,13 @@ function Student({ collegeId }) {
   const history = useHistory();
 
   useEffect(() => {
+    console.log("id from props",collegeId);
+
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/student/college/${collegeId}`)
+      .get(`https://college-backend-assignment.herokuapp.com/api/student/collegeId/${collegeId}`)
       .then((res) => {
         setfetcheddata(res.data);
-        console.log("data", fetcheddata);
+        console.log("college students", fetcheddata);
       })
       .catch((err) => {
         console.log("blog error", err);
@@ -37,32 +39,34 @@ function Student({ collegeId }) {
               <div class="Student_cell">
                 BATCH_YEAR
       </div>
-              <div class="Student_cell">
+              {/* <div class="Student_cell">
                 College_ID
-      </div>
+      </div> */}
               <div class="Student_cell">
                 SKILLS
       </div>
 
             </div>
-            {fetcheddata ? <div class="Student_row">
+            {fetcheddata ? fetcheddata.map(item=>(
+              <div class="Student_row">
               <div class="Student_cell" data-title="ID">
-                {fetcheddata._id}
+                {item._id}
               </div>
               <div class="Student_cell" data-title="Name">
-                {fetcheddata.name}
+                {item.name}
               </div>
               <div class="Student_cell" data-title="Batch Year">
-                {fetcheddata.year}
+                {item.yearOfBatch}
               </div>
-              <div class="Student_cell" data-title="College Id">
-                {fetcheddata.collegeId}
-              </div>
+              {/* <div class="Student_cell" data-title="College Id">
+                {item.collegeId}
+              </div> */}
               <div class="Student_cell" data-title="Courses">
-                {fetcheddata.skills}
+                {item.skills.map(skill=>(skill+", "))}
               </div>
 
-            </div> : <CubeGrid size="90px" color="#5443C3" />}
+            </div>
+            )) : <CubeGrid size="90px" color="#5443C3" />}
       
 
           </div>

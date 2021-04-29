@@ -78,8 +78,8 @@ function Institute() {
                         }
                     </div>
                 </div>
-                <Student collegeId={id}/>
-                <Tabs/>
+                {/* <Student collegeId={id}/> */}
+                <Tabs collegeId={id}/>
             </section>
         </div>
     )
