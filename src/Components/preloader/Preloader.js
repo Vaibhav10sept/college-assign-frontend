@@ -6,12 +6,8 @@ function Preloader() {
     <div className="preloader">
       Developed by: Vaibhav Tiwari
       <div> <br />
-        <CubeGrid size="80px" color="white" />
-
-
+        <CubeGrid size="120px" color="white" />
       </div>
-   
-
     </div>
   )
 }
