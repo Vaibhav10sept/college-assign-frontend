@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "https://college-backend-assignment.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
