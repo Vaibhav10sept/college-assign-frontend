@@ -18,7 +18,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
   export default function Graph() {
     return (
      <div class="pie_chart">
-          <PieChart width={300} height={350} >
+          <PieChart width={900} height={350} >
         <Pie
           dataKey="value"
           isAnimationActive={true}
@@ -29,7 +29,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           fill="#5443c3"
           label
         />
-        {/* <Pie
+        <Pie
           data={data01}
           cx={640}
           cy={200}
@@ -43,7 +43,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           {data01.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
-        </Pie> */}
+        </Pie>
         
         <Tooltip />
       </PieChart>

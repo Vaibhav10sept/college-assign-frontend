@@ -6,6 +6,7 @@ import Table from '../Table/Table'
 import User from '../User/User'
 import Slide from 'react-reveal/Slide';
 import './dash.css'
+import College from '../College/College'
 function Dash() {
     return (
         <div>
@@ -49,7 +50,7 @@ function Dash() {
 
           </div>
         </div>
-        <Table/>
+        <College/>
         <Graph/>
         <User/>
         <Institute/>
