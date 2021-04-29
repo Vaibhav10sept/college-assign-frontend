@@ -14,6 +14,12 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
     { name: "Group E", value: 278 },
     { name: "Group F", value: 189 }
   ];
+  const data02 = [
+    { name: "Group A", value: 400 },
+    { name: "Group B", value: 300 },
+    { name: "Group C", value: 300 },
+
+  ];
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
   export default function Graph() {
     return (
@@ -30,7 +36,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           label
         />
         <Pie
-          data={data01}
+          data={data02}
           cx={640}
           cy={200}
           innerRadius={60}
@@ -40,7 +46,7 @@ import { PieChart, Pie, Legend, Tooltip, Sector, Cell, ResponsiveContainer } fro
           dataKey="value"
           className="dispnone"
         >
-          {data01.map((entry, index) => (
+          {data02.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
