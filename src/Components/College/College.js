@@ -32,148 +32,199 @@ function College() {
                 Courses
       </div>
             </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
               100100101
       </div>
-              <div class="cell" data-title="Age">
+              <div class="College_cell" data-title="Age">
                 College1
       </div>
-              <div class="cell" data-title="Occupation">
+              <div class="College_cell" data-title="Occupation">
                 2009
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Kanpur
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Uttar Pradesh
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 India
       </div>
 
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 CS,ECE,IT,MECH
       </div>
             </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
-                100100101
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
+              100100101
       </div>
-              <div class="cell" data-title="Age">
-              College1
+              <div class="College_cell" data-title="Age">
+                College1
       </div>
-              <div class="cell" data-title="Occupation">
+              <div class="College_cell" data-title="Occupation">
                 2009
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Kanpur
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Uttar Pradesh
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 India
       </div>
 
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 CS,ECE,IT,MECH
       </div>
             </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
               100100101
       </div>
-              <div class="cell" data-title="Age">
-              College1
+              <div class="College_cell" data-title="Age">
+                College1
       </div>
-              <div class="cell" data-title="Occupation">
+              <div class="College_cell" data-title="Occupation">
                 2009
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Kanpur
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Uttar Pradesh
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 India
       </div>
 
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 CS,ECE,IT,MECH
       </div>
             </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
               100100101
       </div>
-              <div class="cell" data-title="Age">
-              College1
+              <div class="College_cell" data-title="Age">
+                College1
       </div>
-              <div class="cell" data-title="Occupation">
+              <div class="College_cell" data-title="Occupation">
                 2009
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Kanpur
       </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 Uttar Pradesh
       </div>
-              <div class="cell" data-title="Location">
-                India
-      </div>
-              <div class="cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
-            </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
-              100100101
-      </div>
-              <div class="cell" data-title="Age">
-              College1
-      </div>
-              <div class="cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="cell" data-title="Location">
-                India
-      </div>
-              <div class="cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
-            </div>
-            <div class="row">
-              <div class="cell" data-title="Name">
-              100100101
-      </div>
-              <div class="cell" data-title="Age">
-              College1
-      </div>
-              <div class="cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 India
       </div>
 
-              <div class="cell" data-title="Location">
+              <div class="College_cell" data-title="Location">
                 CS,ECE,IT,MECH
       </div>
             </div>
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
+              100100101
+      </div>
+              <div class="College_cell" data-title="Age">
+                College1
+      </div>
+              <div class="College_cell" data-title="Occupation">
+                2009
+      </div>
+              <div class="College_cell" data-title="Location">
+                Kanpur
+      </div>
+              <div class="College_cell" data-title="Location">
+                Uttar Pradesh
+      </div>
+              <div class="College_cell" data-title="Location">
+                India
+      </div>
+
+              <div class="College_cell" data-title="Location">
+                CS,ECE,IT,MECH
+      </div>
+            </div>
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
+              100100101
+      </div>
+              <div class="College_cell" data-title="Age">
+                College1
+      </div>
+              <div class="College_cell" data-title="Occupation">
+                2009
+      </div>
+              <div class="College_cell" data-title="Location">
+                Kanpur
+      </div>
+              <div class="College_cell" data-title="Location">
+                Uttar Pradesh
+      </div>
+              <div class="College_cell" data-title="Location">
+                India
+      </div>
+
+              <div class="College_cell" data-title="Location">
+                CS,ECE,IT,MECH
+      </div>
+            </div>
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
+              100100101
+      </div>
+              <div class="College_cell" data-title="Age">
+                College1
+      </div>
+              <div class="College_cell" data-title="Occupation">
+                2009
+      </div>
+              <div class="College_cell" data-title="Location">
+                Kanpur
+      </div>
+              <div class="College_cell" data-title="Location">
+                Uttar Pradesh
+      </div>
+              <div class="College_cell" data-title="Location">
+                India
+      </div>
+
+              <div class="College_cell" data-title="Location">
+                CS,ECE,IT,MECH
+      </div>
+            </div>
+            <div class="College_row">
+              <div class="College_cell" data-title="Name">
+              100100101
+      </div>
+              <div class="College_cell" data-title="Age">
+                College1
+      </div>
+              <div class="College_cell" data-title="Occupation">
+                2009
+      </div>
+              <div class="College_cell" data-title="Location">
+                Kanpur
+      </div>
+              <div class="College_cell" data-title="Location">
+                Uttar Pradesh
+      </div>
+              <div class="College_cell" data-title="Location">
+                India
+      </div>
+
+              <div class="College_cell" data-title="Location">
+                CS,ECE,IT,MECH
+      </div>
+            </div>
+            
             
 
           </div>
