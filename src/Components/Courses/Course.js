@@ -1,209 +1,163 @@
-import React from 'react'
-import './student.css'
+
+
+
+
+import React, { useEffect, useState } from "react";
+import '../College/college.css'
 import Fade from 'react-reveal/Fade';
-function Course() {
-    return (
-        <div className="Student_container">
-           <div class="Student_wrapper">
-           <Fade left cascade>
-  <div class="Student_table">
+import axios from "axios";
+import { useHistory } from "react-router-dom";
+function Course({course}) {
+  const [fetcheddata, setfetcheddata] = useState();
+  const history = useHistory();
+  React.useEffect(() => {
+
+  
+    axios
+      .get(`https://college-backend-assignment.herokuapp.com/api/college/course/${course}`)
+      .then((res) => {
+        setfetcheddata(res.data);
+        console.log("data", fetcheddata);
+      })
+      .catch((err) => {
+        console.log("blog error", err);
+      });
  
-    <div class="Student_row Student_header">
-      <div class="Student_cell">
-        ID
+  }, []);
+  return (
+    <div className="College_container">
+      <div class="College_wrapper">
+        <Fade left cascade>
+          <div class="College_table">
+
+            <div class="College_row College_header">
+              <div class="College_cell">
+                ID
       </div>
-      <div class="Student_cell">
-        NAME
+              <div class="College_cell">
+                Name
       </div>
-      <div class="Student_cell">
-        BATCH_YEAR
+              <div class="College_cell">
+                Year Founded
       </div>
-      <div class="Student_cell">
-        College_ID
+              <div class="College_cell">
+                City
       </div>
-      <div class="Student_cell">
-        SKILLS
+              <div class="College_cell">
+                State
+      </div>
+              <div class="College_cell">
+                Country
       </div>
 
-    </div>
-    <div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
+              <div class="College_cell">
+                Courses
       </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
+            </div>
+            {fetcheddata ? fetcheddata.map((item) => (
+              <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
+                <div class="College_cell" data-title="Name">
+                  {item._id}
+                </div>
+                <div class="College_cell" data-title="Age">
+                  {item.name}
+                </div>
+                <div class="College_cell" data-title="Occupation">
+                  {item.yearFounded}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  {item.city}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  {item.state}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  India
+            </div>
 
-    </div>
-    <div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
+                <div class="College_cell" data-title="Location">
+                  {item.courses.map(cour=>(cour+", "))}
+                </div>
+                </div>
+            )):<h2>loading...</h2>}
 
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
 
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
+              </div>
+        </Fade>
       </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
       </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div><div class="Student_row">
-      <div class="Student_cell" data-title="Name">
-        18BCS2247
-      </div>
-      <div class="Student_cell" data-title="Age">
-        Sanskar
-      </div>
-      <div class="Student_cell" data-title="Occupation">
-        2022
-      </div>
-      <div class="Student_cell" data-title="Location">
-        11811679
-      </div>
-      <div class="Student_cell" data-title="Location">
-        JAVA,REACT,UX&UI
-      </div>
-
-    </div>
-    
-  </div>
-  </Fade>
-</div>
-        </div>
-    )
+  )
 }
 
 export default Course
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import '../Courses/courses.css'
+// function Courses() {
+//     return (
+//         <div>
+//               <div class="blog-card">
+//     <div class="meta">
+//       <div class="photo" style={{backgroundimage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"}}></div>
+//       <ul class="details">
+//         <li class="author"><a href="#">John Doe</a></li>
+//         <li class="date">Aug. 24, 2015</li>
+//         <li class="tags">
+//           <ul>
+//             <li><a href="#">Learn</a></li>
+//             <li><a href="#">Code</a></li>
+//             <li><a href="#">HTML</a></li>
+//             <li><a href="#">CSS</a></li>
+//           </ul>
+//         </li>
+//       </ul>
+//     </div>
+//     <div class="description">
+//       <h1>Learning to Code</h1>
+//       <h2>Opening a door to the future</h2>
+//       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+//       <p class="read-more">
+//         <a href="#">Read More</a>
+//       </p>
+//     </div>
+//   </div>
+//   <div class="blog-card alt">
+//     <div class="meta">
+//       <div class="photo" style={{backgroundimage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"}} ></div>
+//       <ul class="details">
+//         <li class="author"><a href="#">Jane Doe</a></li>
+//         <li class="date">July. 15, 2015</li>
+//         <li class="tags">
+//           <ul>
+//             <li><a href="#">Learn</a></li>
+//             <li><a href="#">Code</a></li>
+//             <li><a href="#">JavaScript</a></li>
+//           </ul>
+//         </li>
+//       </ul>
+//     </div>
+//     <div class="description">
+//       <h1>Mastering the Language</h1>
+//       <h2>Java is not the same as JavaScript</h2>
+//       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+//       <p class="read-more">
+//         <a href="#">Read More</a>
+//       </p>
+//     </div>
+//   </div>
+//         </div>
+//     )
+// }
+
+// export default Courses
