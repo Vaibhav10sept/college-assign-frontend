@@ -18,6 +18,7 @@ import {
   NavLink
 } from "react-router-dom";
 import CollegeDash from '../College/CollegeDash'
+import Landing from '../landing/Landing'
 
 function Dash() {
   return (
@@ -26,7 +27,8 @@ function Dash() {
       <div class="dashbody">
         <input type="checkbox" id="mobilmenu" />
         <div class="sidebar">
-          <div class="logo"><i class="fa fa-shopping-bag"></i><h2>Welcome User</h2></div>
+          <Link to="/">
+          <div class="logo"><i class="fa fa-shopping-bag"></i><h2>Welcome User</h2></div></Link>
           <div class="menu">
             <Slide top cascade>
               <ul>
@@ -70,6 +72,8 @@ function Dash() {
             </div>
           </div>
           <Switch>
+          <Route exact path="/" component={Landing} />
+
             <Route exact path="/state" component={CollegeDash} />
             <Route exact path="/course" component={StudentDash} />
             <Route exact path="/chart" component={Graph} />
