@@ -1,19 +1,19 @@
-
-
-  .preloader {
-
-    color: white;
-    width: 100vw;
-    font-size: 35px;
-  flex-direction: column;
-  align-items: baseline;
-    display: flex;
-    text-align: center;
-    font-weight: 600;
-    background-color: white;
-     align-items: center;
-    justify-content: center;
-  }
+.preloader {
+  position: relative;
+  height: 100vh;
+  color: white;
+  width: 100vw;
+  font-size: 35px;
+flex-direction: column;
+align-items: baseline;
+  display: flex;
+  text-align: center;
+  
+  font-weight: 600;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); 
+   align-items: center;
+  justify-content: center;
+}
   .preloader-img {
       width: 700px;
   }
