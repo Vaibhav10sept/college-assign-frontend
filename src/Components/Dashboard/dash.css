@@ -42,7 +42,7 @@ button
   z-index:-8888;
 }
 #mobilmenu:checked + .sidebar
-{transform:translate(280px); z-index:1;}
+{transform:translate(280px); z-index:999;}
 #mobilmenu:checked + .sidebar + #mmenu
 {transform:translate(50px);color:#fff;}
 
