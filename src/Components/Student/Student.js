@@ -2,54 +2,54 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 function Student() {
     return (
-        <div className="table_container">
-           <div class="wrapper">
+        <div className="Student_container">
+           <div class="Student_wrapper">
            <Fade left cascade>
-  <div class="table">
+  <div class="Student_table">
  
-    <div class="row header">
-      <div class="cell">
+    <div class="Student_row Student_header">
+      <div class="Student_cell">
         Name
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Age
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Occupation
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Location
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Location
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Location
       </div>
-      <div class="cell">
+      <div class="Student_cell">
         Location
       </div>
     </div>
-    <div class="row">
-      <div class="cell" data-title="Name">
+    <div class="Student_row">
+      <div class="Student_cell" data-title="Name">
         Luke Peters
       </div>
-      <div class="cell" data-title="Age">
+      <div class="Student_cell" data-title="Age">
         25
       </div>
-      <div class="cell" data-title="Occupation">
+      <div class="Student_cell" data-title="Occupation">
         Freelance Web Developer
       </div>
-      <div class="cell" data-title="Location">
+      <div class="Student_cell" data-title="Location">
         Brookline, MA
       </div>
-      <div class="cell" data-title="Location">
+      <div class="Student_cell" data-title="Location">
         Brookline, MA
       </div>
-      <div class="cell" data-title="Location">
+      <div class="Student_cell" data-title="Location">
         Brookline, MA
       </div>
-      <div class="cell" data-title="Location">
+      <div class="Student_cell" data-title="Location">
         Brookline
       </div>
     </div>
