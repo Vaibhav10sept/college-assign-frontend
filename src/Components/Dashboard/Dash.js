@@ -7,6 +7,13 @@ import User from '../User/User'
 import Slide from 'react-reveal/Slide';
 import './dash.css'
 import College from '../College/College'
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  useLocation,
+  useHistory
+} from "react-router-dom";
 function Dash() {
     return (
         <div>
@@ -17,8 +24,8 @@ function Dash() {
         <div class="menu">
         <Slide top cascade>
           <ul>
-            <li> <i class="fa fa-home"></i>Student1</li>
-            <li> <i class="fa fa-home"></i>Student1</li>
+            <li> <i class="fa fa-home"></i>state</li>
+            <li> <i class="fa fa-home"></i>courses</li>
             <li> <i class="fa fa-home"></i>Student1</li>
             <li> <i class="fa fa-home"></i>Student1</li>
             <li> <i class="fa fa-home"></i>Student1</li>

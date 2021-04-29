@@ -4,12 +4,18 @@ import Preloader from './Components/preloader/Preloader';
 import './index.css';
 // import Preloader from './components/preloader/Preloader';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter
+} from "react-router-dom";
 const OtherComponent = React.lazy(() => import('./App'));
 
 ReactDOM.render(
   <Suspense fallback={<Preloader />}>
-<OtherComponent />
-</Suspense>, 
+    <BrowserRouter>
+      <OtherComponent />
+
+    </BrowserRouter>
+  </Suspense>,
   document.getElementById('root')
 );
 
