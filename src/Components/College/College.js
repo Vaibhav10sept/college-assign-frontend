@@ -12,8 +12,8 @@ function College() {
     axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
       .then((res) => {
-      setfetcheddata(res.data);
-       console.log("data",fetcheddata);
+        setfetcheddata(res.data);
+        console.log("data", fetcheddata);
       })
       .catch((err) => {
         console.log("blog error", err);
@@ -52,37 +52,37 @@ function College() {
       </div>
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
-                    <div class="College_row">
-                    <div class="College_cell" data-title="Name">
-                      {item._id}
+              <div class="College_row">
+                <div class="College_cell" data-title="Name">
+                  {item._id}
+                </div>
+                <div class="College_cell" data-title="Age">
+                  {item.name}
+                </div>
+                <div class="College_cell" data-title="Occupation">
+                  {item.yearFounded}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  {item.city}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  {item.state}
+                </div>
+                <div class="College_cell" data-title="Location">
+                  India
             </div>
-                    <div class="College_cell" data-title="Age">
-                      {item.name}
-            </div>
-                    <div class="College_cell" data-title="Occupation">
-                      {item.yearFounded}
-            </div>
-                    <div class="College_cell" data-title="Location">
-                      {item.city}
-            </div>
-                    <div class="College_cell" data-title="Location">
-                      {item.state}
-            </div>
-                    <div class="College_cell" data-title="Location">
-                      India
-            </div>
-      
-                    <div class="College_cell" data-title="Location">
-                      CS,ECE,IT,MECH
-            </div>
-                  </div>
+
+                <div class="College_cell" data-title="Location">
+                  {item.courses.map(cour=>(cour+", "))}
+                </div>
+                </div>
             )):<h2>loading...</h2>}
-      
-     
-      </div>
+
+
+              </div>
         </Fade>
       </div>
-    </div>
+      </div>
   )
 }
 
