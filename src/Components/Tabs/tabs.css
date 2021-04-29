@@ -30,7 +30,7 @@
   .tabs input {
     position: absolute;
     z-index: 1000;
-    width: 25%;
+    width: 50%;
     height: 50px;
     left: 0;
     top: 0;
@@ -42,16 +42,9 @@
   }
   
   .tabs input#tab-2 {
-    left: 25%;
-  }
-  
-  .tabs input#tab-3 {
     left: 50%;
   }
   
-  .tabs input#tab-4 {
-    left: 75%;
-  }
   
   .tabs label {
     background: #5443c3;
@@ -64,7 +57,7 @@
     padding: 0 20px;
     float: left;
     display: block;
-    width: 25%;
+    width: 50%;
     letter-spacing: 1px;
     font-weight: bold;
     text-align: center;
@@ -112,7 +105,7 @@
   
   .tabs input:checked + label {
     background: #fefefe;
-    color: #1a1a1a;
+    color: #5443c3;
     z-index: 6;
   }
   
