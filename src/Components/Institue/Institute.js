@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import '../Institue/institute.css'
 import { useParams } from "react-router-dom";
 import Tabs from '../Tabs/Tabs';
+import axios from "axios";
+import { CubeGrid } from "styled-loaders-react";
+
 function Institute() {
     const { id } = useParams();
+
+    const [fetcheddata, setfetcheddata] = useState();
+
+    axios
+        .get(`https://college-backend-assignment.herokuapp.com/api/college/${id}`)
+        .then((res) => {
+            setfetcheddata(res.data);
+            console.log("data", fetcheddata);
+        })
+        .catch((err) => {
+            console.log("blog error", err);
+        });
+
+
     return (
         <div>
             <section class="about" id="about">
                 <div class="container">
                     <div class="heading text-center">
-                        <h2>College
-                        <span>Name</span></h2>
+                    {fetcheddata?  <h2>College
+                        {" "}Name: <span> {fetcheddata.name}</span></h2>:null}
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -20,26 +37,26 @@ function Institute() {
                             <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="about" class="img-fluid" />
                         </div>
 
-                        <div class="col-md-6">
+                        {fetcheddata ? <div class="col-md-6">
                             <div class="col-md-7">
                                 <h3>About the Institution </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>                                    
-                                    <div class="col-md-6">
-                                        <h4>
-                                          <i class="far fa-star"></i>College ID : 12301371</h4>
-                                    </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
                                 <div class="col-md-6">
                                     <h4>
-                                        <i class="far fa-star"></i>College_Name : College4</h4>
+                                        <i class="far fa-star"></i>College ID : {fetcheddata._id}</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>
+                                        <i class="far fa-star"></i>College_Name : {fetcheddata.name}</h4>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
                                         <i class="far fa-star"></i>
-                                    Year founded : 2002</h4>
+                                    Year founded : {fetcheddata.yearFounded}</h4>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
-                                        <i class="far fa-star"></i>City,State</h4>
+                                        <i class="far fa-star"></i>Location: {fetcheddata.city}, {fetcheddata.state}</h4>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
@@ -49,10 +66,13 @@ function Institute() {
                                 <div class="col-md-6">
                                     <h4>
                                         <i class="far fa-star"></i>
-                                    Courses offered</h4>
+                                    Courses offered: {fetcheddata.courses.map(item => ( item + ", " ))}</h4>
                                 </div>
                             </div>
-                        </div>
+                        </div> :
+                            <CubeGrid size="90px" color="#5443C3" />
+
+                        }
                     </div>
                 </div>
                 <Tabs/>
