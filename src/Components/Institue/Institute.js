@@ -59,7 +59,7 @@ function Institute() {
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
-                                        <i class="far fa-star"></i>Location: {fetcheddata.city}, {fetcheddata.state}</h4>
+                                        <i class="far fa-star"></i>Location : {fetcheddata.city}, {fetcheddata.state}</h4>
                                 </div>
                                 <div class="col-md-6">
                                     <h4>
@@ -69,7 +69,7 @@ function Institute() {
                                 <div class="col-md-6">
                                     <h4>
                                         <i class="far fa-star"></i>
-                                    Courses offered: {fetcheddata.courses.map(item => ( item + ", " ))}</h4>
+                                    Courses offered : {fetcheddata.courses.map(item => ( item + ", " ))}</h4>
                                 </div>
                             </div>
                         </div> :

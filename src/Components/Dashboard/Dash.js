@@ -67,7 +67,7 @@ function Dash() {
                 <i id="bildirim" class="fa fa-linkedin" aria-hidden="true"></i>
               </label></a>
               <span>Vaibhav Tiwari</span>
-              <i class="fas fa-chevron-down"></i>
+              
 
             </div>
           </div>
@@ -78,6 +78,8 @@ function Dash() {
             <Route exact path="/course" component={StudentDash} />
             <Route exact path="/chart" component={Graph} />
             <Route exact path="/college/:id" component={Institute} />
+            <Route exact path="/student/:id" component={User} />
+
 
 
           </Switch>
