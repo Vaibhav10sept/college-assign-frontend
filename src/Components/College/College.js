@@ -26,7 +26,7 @@ function College({state}) {
         <Fade left cascade>
           <div class="College_table">
 
-            <div class="College_row College_header">
+            <div class="College_row College_header" style={{cursor:"default"}}>
               <div class="College_cell">
                 ID
       </div>
@@ -43,35 +43,27 @@ function College({state}) {
                 State
       </div>
               <div class="College_cell">
-                Country
-      </div>
-
-              <div class="College_cell">
                 Courses
       </div>
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
               <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
-                <div class="College_cell" data-title="Name">
+                <div class="College_cell" data-title="Id">
                   {item._id}
                 </div>
-                <div class="College_cell" data-title="Age">
+                <div class="College_cell" data-title="Name">
                   {item.name}
                 </div>
-                <div class="College_cell" data-title="Occupation">
+                <div class="College_cell" data-title="Year Founded">
                   {item.yearFounded}
                 </div>
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="City">
                   {item.city}
                 </div>
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="State">
                   {item.state}
                 </div>
-                <div class="College_cell" data-title="Location">
-                  India
-            </div>
-
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="Courses">
                   {item.courses.map(cour=>(cour+", "))}
                 </div>
                 </div>

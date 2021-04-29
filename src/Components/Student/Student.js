@@ -27,7 +27,7 @@ function Student() {
 
     </div>
     <div class="Student_row">
-      <div class="Student_cell" data-title="Name">
+      <div class="Student_cell" data-title="ID">
         18BCS2247
       </div>
       <div class="Student_cell" data-title="Age">

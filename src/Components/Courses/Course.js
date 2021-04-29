@@ -56,22 +56,22 @@ function Course({course}) {
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
               <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
-                <div class="College_cell" data-title="Name">
+                <div class="College_cell" data-title="ID">
                   {item._id}
                 </div>
-                <div class="College_cell" data-title="Age">
+                <div class="College_cell" data-title="Name">
                   {item.name}
                 </div>
-                <div class="College_cell" data-title="Occupation">
+                <div class="College_cell" data-title="Year Founded">
                   {item.yearFounded}
                 </div>
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="City">
                   {item.city}
                 </div>
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="State">
                   {item.state}
                 </div>
-                <div class="College_cell" data-title="Location">
+                <div class="College_cell" data-title="Country">
                   India
             </div>
 

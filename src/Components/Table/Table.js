@@ -13,16 +13,16 @@ function Table() {
         Name
       </div>
       <div class="cell">
-        Age
+        College Name
       </div>
       <div class="cell">
-        Occupation
+        Year Founded
       </div>
       <div class="cell">
-        Location
+        City
       </div>
       <div class="cell">
-        Location
+        State
       </div>
       <div class="cell">
         Location
