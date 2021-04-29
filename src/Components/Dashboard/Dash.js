@@ -26,6 +26,7 @@ function Dash() {
 
       <div class="dashbody">
         <input type="checkbox" id="mobilmenu" />
+        <div class="sidebarsupport"/>
         <div class="sidebar">
           <Link to="/">
             <div class="logo"><i class="fa fa-shopping-bag"></i><h2>Welcome User</h2></div></Link>
@@ -35,7 +36,7 @@ function Dash() {
 
                 <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li class="rout"> Colleges by State</li></NavLink>
 
-                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  Colleges by Courses</li></NavLink>
+                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  Colleges by Course</li></NavLink>
                 <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li class="rout">  View Charts</li></NavLink>
           
 
