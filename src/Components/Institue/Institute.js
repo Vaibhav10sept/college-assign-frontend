@@ -4,11 +4,13 @@ import { useParams } from "react-router-dom";
 import Tabs from '../Tabs/Tabs';
 import axios from "axios";
 import { CubeGrid } from "styled-loaders-react";
+import Student from "../Student/Student";
 
 function Institute() {
     const { id } = useParams();
 
     const [fetcheddata, setfetcheddata] = useState();
+    useEffect(() => {
 
     axios
         .get(`https://college-backend-assignment.herokuapp.com/api/college/${id}`)
@@ -19,6 +21,7 @@ function Institute() {
         .catch((err) => {
             console.log("blog error", err);
         });
+    }, []);
 
 
     return (
@@ -75,6 +78,7 @@ function Institute() {
                         }
                     </div>
                 </div>
+                <Student collegeId={id}/>
                 <Tabs/>
             </section>
         </div>
