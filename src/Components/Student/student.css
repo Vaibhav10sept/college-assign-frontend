@@ -1,65 +1,75 @@
-.table_container {
+.Student_container {
     font-family: "Helvetica Neue", Helvetica, Arial;
     font-size: 18px;
     line-height: 20px;
+    margin-top: 30px;
     font-weight: 400;
     color: #3b3b3b;
+    
     -webkit-font-smoothing: antialiased;
+
+  }
+  .Student_cell{
+    text-align: center;
   }
   @media screen and (max-width: 580px) {
-    .table_container {
+    .Student_container {
       font-size: 16px;
       line-height: 22px;
     }
   }
   
-  .wrapper {
+  .Student_wrapper {
     margin: 0 auto;
-    padding-top: 30px;
-    max-width: 1000px;
+    /* padding-top: 30px; */
+    /* max-width: 1000px; */
+    width:100%;
+    box-shadow: rgba(9, 9, 14, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
   
-  .table {
+  .Student_table {
     margin: 0 0 20px 0;
-    width: 100%;
+    width: fit-content;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     display: table;
+    text-align: center;
+    
   }
   @media screen and (max-width: 580px) {
-    .table {
+    .Student_table {
       display: block;
     }
   }
   
-  .row {
+  .Student_row {
     display: table-row;
     background: #f6f6f6;
   }
-  .row:nth-of-type(odd) {
+  .Student_row:nth-of-type(odd) {
     background: #e9e9e9;
   }
-  .row.header {
-    font-weight: 900;
+  .Student_row.Student_header {
+    font-weight: 700;
     color: #ffffff;
     background: #5443c3;
   }
 
   @media screen and (max-width: 580px) {
-    .row {
-      padding: 10px 0 7px;
+    .Student_row {
+      padding: 17px 0 7px;
       display: block;
     }
-    .row.header {
+    .Student_row.Student_header {
       padding: 0;
       height: 6px;
     }
-    .row.header .cell {
+    .Student_row.Student_header .Student_cell {
       display: none;
     }
-    .row .cell {
+    .Student_row .Student_cell {
       margin-bottom: 10px;
     }
-    .row .cell:before {
+    .Student_row .Student_cell:before {
       margin-bottom: 3px;
       content: attr(data-title);
       min-width: 98px;
@@ -72,12 +82,13 @@
     }
   }
   
-  .cell {
-    padding: 6px 12px;
+  .Student_cell {
+      width: 100%;
+    padding: 10px 38px;
     display: table-cell;
   }
   @media screen and (max-width: 580px) {
-    .cell {
+    .Student_cell {
       padding: 2px 16px;
       display: block;
     }
