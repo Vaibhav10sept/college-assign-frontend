@@ -10,6 +10,10 @@
     align-items:center;
     flex-wrap: wrap;
 }
+.charthead {
+    /* margin-right: 100px; */
+    text-align: center;
+}
 .chartinn {
     text-align: center;
 }
