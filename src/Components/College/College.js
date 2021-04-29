@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import axios from "axios";
 function College() {
   const [isLoading, setIsLoading] = useState(false);
-  const [blogdata, setblogdata] = useState();
+  const [fetcheddata, setfetcheddata] = useState();
 
   React.useEffect(() => {
     const state = "jharkhand"
@@ -12,8 +12,8 @@ function College() {
     axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
       .then((res) => {
-      setblogdata(res.data);
-       console.log("data",blogdata);
+      setfetcheddata(res.data);
+       console.log("data",fetcheddata);
       })
       .catch((err) => {
         console.log("blog error", err);
@@ -51,202 +51,35 @@ function College() {
                 Courses
       </div>
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+            {fetcheddata ? fetcheddata.map((item) => (
+                    <div class="College_row">
+                    <div class="College_cell" data-title="Name">
+                      {item._id}
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+                    <div class="College_cell" data-title="Age">
+                      {item.name}
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+                    <div class="College_cell" data-title="Occupation">
+                      {item.yearFounded}
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+                    <div class="College_cell" data-title="Location">
+                      {item.city}
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+                    <div class="College_cell" data-title="Location">
+                      {item.state}
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+                    <div class="College_cell" data-title="Location">
+                      India
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
-      </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
+      
+                    <div class="College_cell" data-title="Location">
+                      CS,ECE,IT,MECH
             </div>
-            <div class="College_row">
-              <div class="College_cell" data-title="Name">
-                100100101
+                  </div>
+            )):<h2>loading...</h2>}
+      
+     
       </div>
-              <div class="College_cell" data-title="Age">
-                College1
-      </div>
-              <div class="College_cell" data-title="Occupation">
-                2009
-      </div>
-              <div class="College_cell" data-title="Location">
-                Kanpur
-      </div>
-              <div class="College_cell" data-title="Location">
-                Uttar Pradesh
-      </div>
-              <div class="College_cell" data-title="Location">
-                India
-      </div>
-
-              <div class="College_cell" data-title="Location">
-                CS,ECE,IT,MECH
-      </div>
-            </div>
-
-
-
-          </div>
         </Fade>
       </div>
     </div>
