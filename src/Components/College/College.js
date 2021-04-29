@@ -60,7 +60,7 @@ function College({state,collegeId}) {
       </div>
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
-              <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
+              <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);window.location.reload();}}>
                 <div class="College_cell" data-title="Id">
                   {item._id}
                 </div>

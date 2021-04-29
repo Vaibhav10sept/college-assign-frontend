@@ -48,7 +48,7 @@ function Student({ collegeId }) {
 
             </div>
             {fetcheddata ? fetcheddata.map(item=>(
-              <div class="Student_row">
+              <div class="Student_row"  onClick={()=> { history.push(`/student/${item._id}`);}}>
               <div class="Student_cell" data-title="ID">
                 {item._id}
               </div>
