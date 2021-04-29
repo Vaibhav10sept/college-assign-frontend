@@ -26,7 +26,6 @@ function Dash() {
 
       <div class="dashbody">
         <input type="checkbox" id="mobilmenu" />
-        <div class="sidebarsupport"/>
         <div class="sidebar">
           <Link to="/">
             <div class="logo"><i class="fa fa-shopping-bag"></i><h2>Welcome User</h2></div></Link>
