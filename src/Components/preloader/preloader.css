@@ -10,7 +10,7 @@ align-items: baseline;
   display: flex;
   text-align: center;
   font-weight: 600;
-  background: #5443c3; 
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
    align-items: center;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   justify-content: center;
