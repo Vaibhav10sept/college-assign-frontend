@@ -10,11 +10,13 @@ function Student({ collegeId }) {
   const history = useHistory();
 
   useEffect(() => {
+    console.log("id from props",collegeId);
+
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/student/college/${collegeId}`)
+      .get(`https://college-backend-assignment.herokuapp.com/api/student/collegeId/${collegeId}`)
       .then((res) => {
         setfetcheddata(res.data);
-        console.log("data", fetcheddata);
+        console.log("college students", fetcheddata);
       })
       .catch((err) => {
         console.log("blog error", err);

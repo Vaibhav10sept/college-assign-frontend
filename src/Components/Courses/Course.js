@@ -16,7 +16,7 @@ function Course({course}) {
         console.log("data", fetcheddata);
       })
       .catch((err) => {
-        console.log("blog error", err);
+        console.log("error", err);
       });
  
   }, []);
