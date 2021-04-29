@@ -20,9 +20,8 @@
   .tabs {
     position: relative;
     margin: 40px auto;
-    width: 1024px;
+    width: auto;
     max-width: 100%;
-    overflow: hidden;
     padding-top: 10px;
     margin-bottom: 60px;
   }
