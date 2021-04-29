@@ -13,7 +13,7 @@ function Landing() {
   </div>
 </header>
 
-<section class="">
+{/* <section class="">
   <div class="container">
     <div class="col-3 text--center">
       <img src="https://mpng.subpng.com/20190401/zsf/kisspng-mongodb-document-oriented-database-nosql-openshift-web-app-development-servcie-in-dehradun-5ca1b8cb8a0f32.3708278115541024755655.jpg" alt="" class="details-img--ball"/>
@@ -23,9 +23,9 @@ function Landing() {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus omnis illum, officia. Architecto voluptatibus commodi voluptatem perspiciatis eos possimus, eius at molestias quaerat magnam? Odio qui quos ipsam natus.</p>
     </div>
   </div>
-</section>
+</section> */}
 
-<section class="section--primary">
+{/* <section class="section--primary">
   <div class="container">
     <div class="col-3 features">
       <i class="fa fa-bolt"></i>
@@ -107,7 +107,7 @@ function Landing() {
     </ul>
     <p>&copy; 2014 dat Company. All rights reserved.</p>
   </div>
-</footer>
+</footer> */}
         </div>
     </>
     )
