@@ -13,9 +13,7 @@
 }
 
 .dashbody
-{
-  
-  display:flex;
+{ display:flex;
   overflow:hidden;
 }
 button
@@ -34,18 +32,19 @@ button
 { visibility:hidden;
   opacity:0;
   position:absolute;
-  
   z-index:-8888;
+}
+.logo{
+  margin-top: 20px;
 }
 #mobilmenu:checked + .sidebar
 {transform:translate(280px); z-index:2;}
 #mobilmenu:checked + .sidebar + #mmenu
 {transform:translate(50px);color:#fff;}
-
 #mobilmenu:checked + .sidebar + #mmenu i:first-child
 {visibility:hidden;opacity:0;position:absolute;top:-50%;}
 #mobilmenu:checked + .sidebar + #mmenu i:last-child
-{position:absolute;visibility:visible;opacity:1; top:unset;}
+{position:absolute;visibility:visible;opacity:1; top:10px;}
 
  #mmenu i:last-child
 {
@@ -68,7 +67,6 @@ button
   display:flex;
   justify-content:center;
   align-items:center;
-  
   color:#fff;
 }
 .sidebar logo i,h2
@@ -83,16 +81,7 @@ button
     position: -webkit-sticky;
     position: sticky;
 }
-/* .sidebar .menu ul li
-{
-padding: 13px 15px;
-    padding-right: 30px;
-letter-spacing:.05px;
-  margin:15px 0;
-  color:#fff;
-font-size:15px;
-  cursor:pointer;
-} */
+
 .sidebar .Nav_link li
 {font-family: "MuseoModerno";
 padding: 13px 15px;
@@ -278,7 +267,7 @@ bottom:50%;
 @media (max-width:768px)
 {.sidebar{margin-left:-295px;}
   .icerik
-  {width:100%;margin:5px;}
+  {width:100%;}
   .sidebar + #mmenu
   {
     transform:translate(50px);
