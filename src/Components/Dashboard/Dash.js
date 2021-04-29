@@ -1,5 +1,5 @@
 import React from 'react'
-import Courses from '../Courses/Courses'
+import Courses from '../Courses/Course'
 import Graph from '../Graph/Graph'
 import Institute from '../Institue/Institute'
 import Table from '../Table/Table'
