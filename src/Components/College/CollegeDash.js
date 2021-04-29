@@ -1,7 +1,7 @@
 import React from 'react'
 import College from './College'
 function CollegeDash() {
-    const state = ["uttar pradesh", "haryana", "madhya pradesh", "maharashtra", "andhra pradesh", "assam", "jharkhand"]
+    const state = ["Uttar Pradesh", "Haryana", "Madhya pradesh", "Maharashtra", "Andhra Pradesh", "Assam", "Jharkhand"]
 
     return (
 
