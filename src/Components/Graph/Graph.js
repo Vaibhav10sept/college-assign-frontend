@@ -59,7 +59,7 @@ export default function Graph() {
 
       {fetcheddata ? (
         <div className="chartinn">
-          <h2 className="headbar">course wise division of colleges</h2>
+          <h2 className="headbar charthead">course wise division of colleges</h2>
           <PieChart width={400} height={400} >
             <Pie
               dataKey="value"
