@@ -22,7 +22,7 @@
   color: white;
   font-weight: 500;
   font-size: 1.3rem;
-  background: #007ece;
+  background: #5443c3;
   letter-spacing: 0.02em;
   border: none;
   border-radius: 5px;
@@ -37,13 +37,13 @@
   }
 }
 .btn:hover {
-  background: #008ee8;
+    background-image: linear-gradient(to top, #5443c3 0%, #7c66bd 100%);
   color: #fff;
 }
 .btn:focus, .btn:active, .btn:focus:active {
-  background: #006eb5;
-  border-color: #006eb5;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5) inset;
+    background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
+  border-color: #5443c3;
+  box-shadow: 0 20px 25px 0 rgba(8, 7, 7, 0.712) inset;
 }
 
 .container {
@@ -54,7 +54,7 @@
 
 .landing_cont header {
   color: white;
-  background: #007ece;
+  background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
   padding: 10rem 0;
   text-align: center;
   position: relative;
@@ -97,11 +97,11 @@ section {
   }
 }
 section.section--primary {
-  background: #007ece;
+    background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
   color: #fff;
 }
 section.section--primary--alt {
-  background: #27a4f4;
+    background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
   color: #fff;
 }
 section.section--primary--light {
@@ -320,8 +320,8 @@ footer ul li a:hover {
   background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
   transform: scale(1.1);
 }
-/* .bg-image.bg-image-2:before {
+.bg-image.bg-image-2:before {
   opacity: 0.6;
-  background-image: url("http://orbotix.wpengine.netdna-cdn.com/wp-content/uploads/2013/07/Kids3.jpg");
+  background-image: linear-gradient(to top, #5443c3 0%, #b49dfa 100%);
   background-position: center center;
-} */
+}
