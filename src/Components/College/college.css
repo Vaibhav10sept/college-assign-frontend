@@ -13,13 +13,13 @@
     }
   }
   
-  .wrapper {
+  .College_wrapper {
     margin: 0 auto;
     padding-top: 30px;
     max-width: 1000px;
   }
   
-  .table {
+  .College_table {
     margin: 0 0 20px 0;
     width: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -27,40 +27,40 @@
     text-align: center;
   }
   @media screen and (max-width: 580px) {
-    .table {
+    .College_table {
       display: block;
     }
   }
   
-  .row {
+  .College_row {
     display: table-row;
     background: #f6f6f6;
   }
-  .row:nth-of-type(odd) {
+  .College_row:nth-of-type(odd) {
     background: #e9e9e9;
   }
-  .row.header {
+  .College_row.College_header {
     font-weight: 900;
     color: #ffffff;
     background: #5443c3;
   }
 
   @media screen and (max-width: 580px) {
-    .row {
+    .College_row {
       padding: 10px 0 7px;
       display: block;
     }
-    .row.header {
+    .College_row.College_header {
       padding: 0;
       height: 6px;
     }
-    .row.header .cell {
+    .College_row.College_header .College_cell {
       display: none;
     }
-    .row .cell {
+    .College_row .College_cell {
       margin-bottom: 10px;
     }
-    .row .cell:before {
+    .College_row .College_cell:before {
       margin-bottom: 3px;
       content: attr(data-title);
       min-width: 98px;
@@ -73,12 +73,12 @@
     }
   }
   
-  .cell {
+  .College_cell {
     padding: 6px 12px;
     display: table-cell;
   }
   @media screen and (max-width: 580px) {
-    .cell {
+    .College_cell {
       padding: 2px 16px;
       display: block;
     }
