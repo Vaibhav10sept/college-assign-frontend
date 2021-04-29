@@ -39,7 +39,7 @@ function User() {
         <div class="data">
           <span class="entypo-heart"> Profiles Details</span>
         </div>
-        <div class="left">Unique ID</div>
+        <div class="left">Student ID</div>
         <div class="right">{fetcheddata._id}</div>
         <div class="left">Name</div>
         <div class="right">{fetcheddata.name}</div>

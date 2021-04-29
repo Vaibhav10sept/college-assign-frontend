@@ -2,17 +2,15 @@ import React, { useEffect, useState } from "react";
 import '../College/college.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import CubeGrid from "styled-loaders-react/lib/components/CubeGrid";
 
 function College({state,collegeId}) {
   const [fetcheddata, setfetcheddata] = useState();
-  const { pathname } = useLocation();
+
   const history = useHistory();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+
 
   React.useEffect(() => {
   if(state){
