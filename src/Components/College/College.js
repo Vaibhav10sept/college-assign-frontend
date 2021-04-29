@@ -36,10 +36,10 @@ function College({state}) {
               <div class="College_cell">
                 Year Founded
       </div>
-              <div class="College_cell">
+              <div class="College_cell" style={{textTransform:"uppercase"}}>
                 City
       </div>
-              <div class="College_cell">
+              <div class="College_cell" style={{textTransform:"uppercase"}}>
                 State
       </div>
               <div class="College_cell">

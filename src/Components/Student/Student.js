@@ -30,16 +30,16 @@ function Student() {
       <div class="Student_cell" data-title="ID">
         18BCS2247
       </div>
-      <div class="Student_cell" data-title="Age">
+      <div class="Student_cell" data-title="Name">
         Sanskar
       </div>
-      <div class="Student_cell" data-title="Occupation">
+      <div class="Student_cell" data-title="Batch Year">
         2022
       </div>
-      <div class="Student_cell" data-title="Location">
+      <div class="Student_cell" data-title="College Id">
         11811679
       </div>
-      <div class="Student_cell" data-title="Location">
+      <div class="Student_cell" data-title="Courses">
         JAVA,REACT,UX&UI
       </div>
 

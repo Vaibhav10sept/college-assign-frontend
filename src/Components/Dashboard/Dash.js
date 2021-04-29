@@ -31,14 +31,14 @@ function Dash() {
             <Slide top cascade>
               <ul>
 
-                <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li class="rout"> <i class="fa fa-home"></i>  State</li></NavLink>
+                <NavLink activeStyle={{color: 'red!important'}} to="/state" className="Nav_link" > <li class="rout"> <i class="fa fa-home"></i>  State</li></NavLink>
 
-                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  <i class="fa fa-home"></i>    Courses</li></NavLink>
-                <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
-                <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li class="rout"> <i class="fa fa-home"></i>   State</li></NavLink>
+                <NavLink activeStyle={{color: 'red!important'}} to="/course" className="Nav_link" >  <li class="rout">  <i class="fa fa-home"></i>    Courses</li></NavLink>
+                <NavLink activeStyle={{color: 'red!important'}} to="/chart" className="Nav_link" >     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
+                <NavLink to="/state" className="Nav_link" > <li class="rout"> <i class="fa fa-home"></i>   State</li></NavLink>
 
-                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  <i class="fa fa-home"></i>    Courses</li></NavLink>
-                <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
+                <NavLink to="/course" className="Nav_link" >  <li class="rout">  <i class="fa fa-home"></i>    Courses</li></NavLink>
+                <NavLink to="/chart" className="Nav_link" >     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
 
 
 
