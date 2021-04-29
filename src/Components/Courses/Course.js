@@ -1,6 +1,5 @@
-
 import React, { useEffect, useState } from "react";
-import '../College/college.css'
+import '../Courses/courses.css'
 import Fade from 'react-reveal/Fade';
 import axios from "axios";
 import { Scale } from "styled-loaders-react";
@@ -11,9 +10,7 @@ function Course({course}) {
   const [fetcheddata, setfetcheddata] = useState();
   const history = useHistory();
   React.useEffect(() => {
-
-  
-    axios
+  axios
       .get(`https://college-backend-assignment.herokuapp.com/api/college/course/${course}`)
       .then((res) => {
         setfetcheddata(res.data);
@@ -25,57 +22,57 @@ function Course({course}) {
  
   }, []);
   return (
-    <div className="College_container">
-      <div class="College_wrapper">
+    <div className="Courses_container">
+      <div class="Courses_wrapper">
         <Fade left cascade>
-          <div class="College_table">
+          <div class="Courses_table">
 
-            <div class="College_row College_header">
-              <div class="College_cell">
+            <div class="Courses_row Courses_header">
+              <div class="Courses_cell">
                 ID
       </div>
-              <div class="College_cell">
+              <div class="Courses_cell">
                 Name
       </div>
-              <div class="College_cell">
+              <div class="Courses_cell">
                 Year Founded
       </div>
-              <div class="College_cell">
+              <div class="Courses_cell">
                 City
       </div>
-              <div class="College_cell">
+              <div class="Courses_cell">
                 State
       </div>
-              <div class="College_cell">
+              <div class="Courses_cell">
                 Country
       </div>
 
-              <div class="College_cell">
+              <div class="Courses_cell">
                 Courses
       </div>
             </div>
             {fetcheddata ? fetcheddata.map((item) => (
-              <div class="College_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
-                <div class="College_cell" data-title="ID">
+              <div class="Courses_row" onClick={()=> { history.push(`/college/${item._id}`);}}>
+                <div class="Courses_cell" data-title="ID">
                   {item._id}
                 </div>
-                <div class="College_cell" data-title="Name">
+                <div class="Courses_cell" data-title="Name">
                   {item.name}
                 </div>
-                <div class="College_cell" data-title="Year Founded">
+                <div class="Courses_cell" data-title="Year Founded">
                   {item.yearFounded}
                 </div>
-                <div class="College_cell" data-title="City">
+                <div class="Courses_cell" data-title="City">
                   {item.city}
                 </div>
-                <div class="College_cell" data-title="State">
+                <div class="Courses_cell" data-title="State">
                   {item.state}
                 </div>
-                <div class="College_cell" data-title="Country">
+                <div class="Courses_cell" data-title="Country">
                   India
             </div>
 
-                <div class="College_cell" data-title="Location">
+                <div class="Courses_cell" data-title="Location">
                   {item.courses.map(cour=>(cour+", "))}
                 </div>
                 </div>
