@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import '../College/college.css'
 import Fade from 'react-reveal/Fade';
+import axios from "axios";
 function College() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [blogdata, setblogdata] = useState();
+
+  React.useEffect(() => {
+    const state = "jharkhand"
+    setIsLoading(true);
+    axios
+      .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
+      .then((res) => {
+      setblogdata(res.data);
+       console.log("data",blogdata);
+      })
+      .catch((err) => {
+        console.log("blog error", err);
+      });
+    // console.log("response is: "+response);
+    setIsLoading(false);
+  }, []);
   return (
     <div className="College_container">
       <div class="College_wrapper">
@@ -27,14 +46,14 @@ function College() {
               <div class="College_cell">
                 Country
       </div>
-              
+
               <div class="College_cell">
                 Courses
       </div>
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -58,7 +77,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -82,7 +101,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -106,7 +125,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -130,7 +149,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -154,7 +173,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -178,7 +197,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -202,7 +221,7 @@ function College() {
             </div>
             <div class="College_row">
               <div class="College_cell" data-title="Name">
-              100100101
+                100100101
       </div>
               <div class="College_cell" data-title="Age">
                 College1
@@ -224,8 +243,8 @@ function College() {
                 CS,ECE,IT,MECH
       </div>
             </div>
-            
-            
+
+
 
           </div>
         </Fade>
