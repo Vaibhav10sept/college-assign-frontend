@@ -293,6 +293,11 @@ bottom:50%;
   {
     transform:translate(50px);
   }
+  .sidebarsupport {
+    width:0;
+  height: 100vh;
+  
+  }
   .icerik .ust
   {
     flex-direction:column;

@@ -5,9 +5,9 @@ function CourseDash() {
     const course = ["IT", "CSE", "ML", "M-TECH", "PHD", "HM", "BSC", "BCOM", "MCOM", "BA", "MA", "MSC"];
     return (
         <>
-            <h1>Colleges that offers CSE</h1>
+            <h1 className="headbar">Colleges that offers CSE</h1>
             <Course course="CSE" />
-            <h1>Colleges that offers IT</h1>
+            <h1 className="headbar">Colleges that offers IT</h1>
             <Course course="IT" />
      
 
