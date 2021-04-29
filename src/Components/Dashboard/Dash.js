@@ -31,10 +31,14 @@ function Dash() {
             <Slide top cascade>
               <ul>
 
-                <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li> <i class="fa fa-home"></i>state</li></NavLink>
+                <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li class="rout"> <i class="fa fa-home"></i>state</li></NavLink>
 
-                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li>  <i class="fa fa-home"></i>    courses</li></NavLink>
-                <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li>  <i class="fa fa-home"></i>     Charts</li></NavLink>
+                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  <i class="fa fa-home"></i>    courses</li></NavLink>
+                <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
+                <NavLink to="/state" className="Nav_link" activeClassName="activeRoute"> <li class="rout"> <i class="fa fa-home"></i>state</li></NavLink>
+
+                <NavLink to="/course" className="Nav_link" activeClassName="activeRoute">  <li class="rout">  <i class="fa fa-home"></i>    courses</li></NavLink>
+                <NavLink to="/chart" className="Nav_link" activeClassName="activeRoute">     <li class="rout">  <i class="fa fa-home"></i>     Charts</li></NavLink>
 
 
 

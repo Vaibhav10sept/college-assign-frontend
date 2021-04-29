@@ -87,8 +87,7 @@ button
     align-items: center;
     padding: 70px 0px;
 }
-.sidebar .menu ul li
-
+/* .sidebar .menu ul li
 {
 padding: 13px 15px;
     padding-right: 30px;
@@ -97,18 +96,35 @@ letter-spacing:.05px;
   color:#fff;
 font-size:15px;
   cursor:pointer;
+} */
+.sidebar .Nav_link li
+{
+padding: 13px 15px;
+    padding-right: 30px;
+letter-spacing:.08px;
+  margin:15px 0;
+  color:#fff;
+font-size:18px;
+  cursor:pointer;
 }
-.sidebar .menu ul li:first-child,li:hover:not(:last-child)
+.Nav_link li:hover{
+  background-color: #45379c;
+}
+.activeRoute{
+  background-color: #ddd9f2;
+  color: #5443c3;
+}
+.sidebar .menu ul Nav_link li:first-child,menu ul Nav_link li:hover:not(:last-child)
 {
   background:rgba(255,255,255, .2);
   border-radius:10px;
 }
-.sidebar .menu ul li:last-child
+.sidebar .menu ul Nav_link li:last-child
 {
   position:absolute;
   bottom:0;
 }
-.sidebar .menu ul li i
+.sidebar .menu ul Nav_link li i
 {
   margin-right:25px;
   
