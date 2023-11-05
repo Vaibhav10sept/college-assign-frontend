@@ -12,7 +12,7 @@ function User() {
     console.log("id from props", id);
 
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/student/${id}`)
+      .get(`https://nutty-pocket-worm.cyclic.app/api/student/${id}`)
       .then((res) => {
         setfetcheddata(res.data);
         console.log("college students", fetcheddata);

@@ -13,7 +13,7 @@ function Student({ collegeId }) {
     console.log("id from props",collegeId);
 
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/student/collegeId/${collegeId}`)
+      .get(`https://nutty-pocket-worm.cyclic.app/api/student/collegeId/${collegeId}`)
       .then((res) => {
         setfetcheddata(res.data);
         console.log("college students", fetcheddata);

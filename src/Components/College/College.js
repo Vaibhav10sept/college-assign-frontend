@@ -15,7 +15,7 @@ function College({state,collegeId}) {
   React.useEffect(() => {
   if(state){
     axios
-    .get(`https://college-backend-assignment.herokuapp.com/api/college/state/${state}`)
+    .get(`https://nutty-pocket-worm.cyclic.app/api/college/state/${state}`)
     .then((res) => {
       setfetcheddata(res.data);
       console.log("data", fetcheddata);
@@ -26,7 +26,7 @@ function College({state,collegeId}) {
   }
   if(collegeId) {
     axios
-    .get(`https://college-backend-assignment.herokuapp.com/api/college/similarCollege/${collegeId}`)
+    .get(`https://nutty-pocket-worm.cyclic.app/api/college/similarCollege/${collegeId}`)
     .then((res) => {
       setfetcheddata(res.data);
       console.log("data", fetcheddata);

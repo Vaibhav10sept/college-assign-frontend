@@ -13,7 +13,7 @@ export default function Graph() {
   React.useEffect(() => {
 
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/college/countStates`)
+      .get(`https://nutty-pocket-worm.cyclic.app/api/college/countStates`)
       .then((res) => {
         setfetcheddata(res.data);
         console.log("data", fetcheddata);
@@ -24,7 +24,7 @@ export default function Graph() {
 
 
     axios
-      .get(`https://college-backend-assignment.herokuapp.com/api/college/countCourses`)
+      .get(`https://nutty-pocket-worm.cyclic.app/api/college/countCourses`)
       .then((res) => {
         setfetcheddata2(res.data);
         console.log("data", fetcheddata2);
